@@ -3,21 +3,12 @@
 # T M Russell
 # 
 
-from datetime import date
-from datetime import datetime
 from tabulate import tabulate
 
 def main():
-    now = datetime.now()
-    d1_string = now.strftime("%B %d, %Y")
-    t1_string = now.strftime("%H:%M:%S")
-    
-    print_stars(40)
-    print("Hello World on", d1_string)
-    print("The time is", t1_string)
     print_stars(40)
     print(tabulate([["value1", "value2"], ["value3", "value4"]], ["column 1", "column 2"], tablefmt="grid"))
-
+    print_stars(40)
 
 def print_stars(number_of_stars):
 	temp_str = ""
