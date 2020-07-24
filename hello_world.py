@@ -5,7 +5,6 @@
 
 from datetime import date
 from datetime import datetime
-from tabulate import tabulate
 
 def main():
     now = datetime.now()
@@ -16,8 +15,6 @@ def main():
     print("Hello World on", d1_string)
     print("The time is", t1_string)
     print_stars(40)
-    print(tabulate([["value1", "value2"], ["value3", "value4"]], ["column 1", "column 2"], tablefmt="grid"))
-
 
 def print_stars(number_of_stars):
 	temp_str = ""
