@@ -11,10 +11,18 @@ def main():
     d1_string = now.strftime("%B %d, %Y")
     t1_string = now.strftime("%H:%M:%S")
     
-    print_stars(40)
-    print("Hello World on", d1_string)
-    print("The time is", t1_string)
-    print_stars(40)
+    temp_counter = 1
+    while temp_counter < 45:
+        print_stars(temp_counter)
+        temp_counter = temp_counter + 5
+    print("\tHello World on", d1_string)
+    print("\tThe time is", t1_string)
+    temp_counter = 41
+    while temp_counter > 0:
+        print_stars(temp_counter)
+        temp_counter = temp_counter - 5
+    
+
 
 def print_stars(number_of_stars):
 	temp_str = ""
