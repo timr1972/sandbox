@@ -6,8 +6,6 @@
 
 import csv
 import sys
-import subprocess as sp
-tmp = sp.call('cls', shell=True)
 
 def main():
 	print_stars(40)
