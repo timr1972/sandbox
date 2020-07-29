@@ -23,6 +23,7 @@ def main():
 		vag_code = vag_code.replace("O", "0")
 
 		# Check for no entry...
+		found = 0
 		if vag_code == "":
 			finished = 1
 		else:
@@ -34,7 +35,6 @@ def main():
 					found=1
 			if found != 1:
 				vag_array.append([vag_code.upper(),'Not Found'])
-			found = 0
 			csv_file = ""
 		code_count = code_count + 1
 	for x in vag_array:
